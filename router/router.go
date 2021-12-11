@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/go-chi/chi"
-	"github.com/praveen001/go-rtmp-web-server/controllers"
+	"github.com/streato/go-rtmp-web-server/controllers"
 )
 
 // CustomRouter wrapped mux router
