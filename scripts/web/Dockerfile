@@ -17,8 +17,8 @@ RUN ls
 ###########
 FROM golang AS build-backend
 
-COPY . /go/src/github.com/praveen001/go-rtmp-web-server
-RUN cd /go/src/github.com/praveen001/go-rtmp-web-server && go get && go install
+COPY . /go/src/github.com/streato/go-rtmp-web-server
+RUN cd /go/src/github.com/streato/go-rtmp-web-server && go get && go install
 
 
 #########
