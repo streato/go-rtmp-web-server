@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/praveen001/go-rtmp-web-server/models"
+	"github.com/streato/go-rtmp-web-server/models"
 )
 
 // AddChannel a new channel for a given user
