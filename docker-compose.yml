@@ -23,7 +23,7 @@ services:
             dockerfile: ./scripts/rtmp/Dockerfile
         env_file:
             - ./scripts/prod.env
-        entrypoint: ./wait-for-it.sh web:80 -- ./rtmp/init.sh
+        entrypoint: ./scripts/wait-for-it.sh web:80 -- ./scripts/rtmp/init.sh
         restart: unless-stopped
         ports:
             - "1935:1935"
@@ -38,7 +38,7 @@ services:
         build:
             context: .
             dockerfile: ./scripts/web/Dockerfile
-        entrypoint: ./wait-for-it.sh db:3306 -- ./web/init.sh
+        entrypoint: ./scripts/wait-for-it.sh db:3306 -- ./scripts/web/init.sh
         restart: unless-stopped
         ports:
             - "4005:4005"
