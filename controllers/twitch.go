@@ -9,7 +9,7 @@ import (
 	"strconv"
 
 	"github.com/google/uuid"
-	"github.com/praveen001/go-rtmp-web-server/models"
+	"github.com/streato/go-rtmp-web-server/models"
 )
 
 var clientID string
