@@ -7,7 +7,7 @@ import (
 	"strconv"
 
 	"github.com/google/uuid"
-	"github.com/praveen001/go-rtmp-web-server/models"
+	"github.com/streato/go-rtmp-web-server/models"
 	"golang.org/x/net/context"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
